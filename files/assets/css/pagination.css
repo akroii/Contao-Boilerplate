@@ -1,0 +1,10 @@
+/* Pagination */
+.pagination                 {padding: 1em 0;}
+.pagination li              {}
+.pagination li a            {}
+.pagination .prev           {float: left;}
+.pagination .next           {float: right;}
+
+.readmore                   {}
+.readmore li                {}
+.readmore li a              {}
