@@ -1,3 +1,23 @@
+<IfModule mod_setenvif.c>
+   # SEO
+   SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|SEOkicks-Robot|SearchmetricsBot|SISTRIX) keep_out
+   # Backlinks & Links
+   SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot) keep_out
+   # Performance Testing
+   SetEnvIfNoCase User-Agent (200PleaseBot|ApacheBench|LoadTimeBot) keep_out
+   # Harvester & Marketing
+   SetEnvIfNoCase User-Agent (CareerBot|GrapeshotCrawler|iCjobs|magpie-crawler|proximic|QuerySeekerSpider|Vagabondo|WBSearchBot) keep_out
+   # Useless, Bad & Unknown
+   SetEnvIfNoCase User-Agent (Ezooms|^Java|libwww-perl|niki-bot|updown_tester) keep_out
+   # Empty User-Agent
+   SetEnvIfNoCase User-Agent ^$ keep_out
+   <limit GET POST PUT>
+      Order Allow,Deny
+      Allow from all
+      Deny from env=keep_out
+   </limit>
+</IfModule>
+
 RewriteCond %{QUERY_STRING} proc/self/environ [OR]
 RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
 RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
