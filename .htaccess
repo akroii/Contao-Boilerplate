@@ -306,4 +306,10 @@ SetEnv SERVER_ADMIN yyy@yyy.de
 Header set Connection keep-alive
 </ifModule>
 
+##
+# Redirects
+##
+#Redirect 301 /old http://www.yyyy.de/new
+#Redirect 410 /assets/css/file.css
+
 ErrorDocument 404 /index.php
