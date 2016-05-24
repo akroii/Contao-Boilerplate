@@ -2,6 +2,6 @@
 Run your fresh Contao-installation like a rocket with Contao-Boilerplate.
 
 ## What you get
-- File-struture
+- File-structure
 - Basic configuration
 - Basic stylesheets
