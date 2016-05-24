@@ -1,0 +1,1 @@
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/script.js|static';
