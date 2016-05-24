@@ -272,7 +272,9 @@ FileETag None
   RewriteRule ^([a-z]{2}(\-[A-Z]{2})?)$ $1/ [R=301,L]
 
 </IfModule>
-
+  ##
+  # Custom Settings
+  ##
 <IfModule mod_setenvif.c>
    SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|SEOkicks-Robot|SearchmetricsBot|SISTRIX) keep_out
    SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot) keep_out
@@ -295,6 +297,10 @@ RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
 RewriteRule ^(.*)$ index.php [F,L]
 
 AddDefaultCharset UTF-8
+ServerSignature Off
+SetEnv TZ Europe/Berlin
+DefaultLanguage de-DE
+SetEnv SERVER_ADMIN yyy@yyy.de
 
 <ifModule mod_headers.c>
 Header set Connection keep-alive
