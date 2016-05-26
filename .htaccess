@@ -270,6 +270,14 @@ FileETag None
   ##
   RewriteRule ^[a-z]{2}(\-[A-Z]{2})?/$ index.php [L]
   RewriteRule ^([a-z]{2}(\-[A-Z]{2})?)$ $1/ [R=301,L]
+  
+  ##
+  # Redirects
+  ##
+  #Redirect 301 /old http://www.yyyy.de/new
+  #Redirect 410 /assets/css/file.css
+
+ErrorDocument 404 /index.php
 
 </IfModule>
   ##
@@ -305,11 +313,3 @@ SetEnv SERVER_ADMIN yyy@yyy.de
 <ifModule mod_headers.c>
 Header set Connection keep-alive
 </ifModule>
-
-##
-# Redirects
-##
-#Redirect 301 /old http://www.yyyy.de/new
-#Redirect 410 /assets/css/file.css
-
-ErrorDocument 404 /index.php
