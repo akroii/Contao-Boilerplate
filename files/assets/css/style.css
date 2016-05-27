@@ -12,15 +12,15 @@
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 
 /* Global */
+html                                {box-sizing: border-box;}
+*, *:before, *:after                {box-sizing: inherit;}
 ::-moz-selection,::selection        {background: #b3d4fc;text-shadow: none;}
 html                                {color: #222;font-size: 1rem;line-height: 1.4;}
 audio,canvas,iframe,img,svg,video   {vertical-align: middle;}
 img                                 {display: block;max-width: 100%;height:auto;}
 a                                   {}
 hr                                  {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
-html                                {box-sizing: border-box;}
 body                                {min-width:320px}
-*, *:before, *:after                {box-sizing: inherit;}
 
 /* Procedural */
 
