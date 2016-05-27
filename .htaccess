@@ -284,7 +284,7 @@ ErrorDocument 404 /index.php
   # Custom Settings
   ##
 <IfModule mod_setenvif.c>
-   SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|SEOkicks-Robot|SearchmetricsBot|SISTRIX) keep_out
+   SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|^SemrushBot) keep_out
    SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot) keep_out
    SetEnvIfNoCase User-Agent (200PleaseBot|ApacheBench|LoadTimeBot) keep_out
    SetEnvIfNoCase User-Agent (CareerBot|GrapeshotCrawler|iCjobs|magpie-crawler|proximic|QuerySeekerSpider|Vagabondo|WBSearchBot) keep_out
