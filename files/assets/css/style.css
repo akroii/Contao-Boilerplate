@@ -6,7 +6,7 @@
 .clearfix:before,
 .clearfix:after                     {content: " ";display: table;}
 .clearfix:after                     {clear: both;}
-.unstyled                           {list-style:none}
+.unstyled ul,.unstyled              {list-style:none}
 .inline li                          {display: inline-block}
 .inline li a                        {display: block}
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
