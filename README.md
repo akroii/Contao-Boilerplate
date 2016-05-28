@@ -6,4 +6,4 @@
 - Get a default file-structure
 - Basic configuration
 - Basic stylesheets
-- You can take care of contao alone (don'nt be busy with creating folders :))
+- You can take care of contao alone (don't be busy with creating folders :))
