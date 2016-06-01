@@ -9,6 +9,8 @@
 .unstyled ul,.unstyled              {list-style:none;}
 .inline li                          {display: inline-block}
 .inline li a                        {display: block}
+.overlay                            {position:relative;}
+.overlay > .inner                   {position:absolute;z-index:9;top:0;}
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 
 /* Global */
