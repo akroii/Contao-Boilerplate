@@ -12,6 +12,8 @@
 .overlay                            {position:relative;}
 .overlay > .inner                   {position:absolute;z-index:9;top:0;}
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.vcenter_wrapper                    {position:absolute;top:0;left:0;display:table;width:100%;height:100%;}
+.vcenter_wrapper .receiver          {display:table-cell;vertical-align: middle;min-width:1024px;}
 
 /* Global */
 html                                {box-sizing: border-box;}
