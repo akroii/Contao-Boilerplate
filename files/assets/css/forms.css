@@ -1,4 +1,37 @@
 /* Forms */
-fieldset                            {border: 0;margin: 0;padding: 0;}
-textarea                            {resize: vertical;}
-input,textarea                      {}
+.ce_form .row,.ce_form .select          {}
+.ce_form .label                         {}
+.ce_form .label,
+.ce_form input,
+.ce_form select,
+.ce_form textarea                       {}
+.ce_form input[type="text"],
+.ce_form input[type="email"],
+.ce_form input#ctrl_website,
+.ce_form input[type="password"],
+.ce_form input[type="number"],
+.ce_form input[type="search"],
+.ce_form input[type="tel"],
+.ce_form select,
+.ce_form textarea                       {}
+.ce_form .checkbox                      {-webkit-appearance:normal;}
+.ce_form .label                         {}
+.ce_form textarea                       {resize: vertical;}
+.ce_form span.mandatory,
+.ce_form span.mandatory a               {}
+.ce_form input:focus,
+.ce_form input:focus,
+.ce_form textarea:focus                 {}
+.ce_form input[type="text"],
+.ce_form input[type="url"],
+.ce_form input[type="number"],
+.ce_form input[type="search"],
+.ce_form input[type="email"],
+.ce_form textarea,
+.ce_form input[type="submit"],
+.ce_form .submit                        {}
+.ce_form .submit_container input        {}
+.ce_form .submit                        {}
+.ce_form .submit:hover                  {}
+.ce_form .submit:focus                  {}
+.ce_form .submit:active                 {}
