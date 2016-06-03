@@ -1,7 +1,8 @@
 /* Pagination */
 .pagination                 {padding: 1em 0;}
 .pagination li              {}
-.pagination li a            {}
+.pagination li a,
+.pagination li span         {}
 .pagination .prev           {float: left;}
 .pagination .next           {float: right;}
 
