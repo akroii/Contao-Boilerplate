@@ -1,7 +1,7 @@
 /* Helper */
 .fullpage                           {position: absolute;top: 0px;left: 0;display: table;margin: 0;padding: 0;width: 100%;height: 100%;}
 .fullpage .hcenter                  {display: table-cell;margin: 0;padding: 0;vertical-align: middle;}
-.vcenter                            {text-align: center}
+.align_center                       {text-align: center}
 .float_right                        {float:right;}
 .float_left                         {float:left;}
 .invisible                          {visibility: hidden;}
@@ -14,8 +14,6 @@
 .overlay                            {position:relative;}
 .overlay > .inner                   {position:absolute;z-index:9;top:0;}
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
-.vcenter_wrapper                    {position:absolute;top:0;left:0;display:table;width:100%;height:100%;}
-.vcenter_wrapper .receiver          {display:table-cell;vertical-align: middle;min-width:1024px;}
 .image-wrapper                      {width: 90%;height: 0;padding-bottom: 66.67%;position: relative;} /* Padding bottom hack */
 .image-wrapper img                  {width: 100%;position: absolute;}
     
