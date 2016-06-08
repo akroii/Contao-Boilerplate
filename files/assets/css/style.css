@@ -16,7 +16,7 @@
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 .image-wrapper                      {width: 90%;height: 0;padding-bottom: 66.67%;position: relative;} /* Padding bottom hack */
 .image-wrapper img                  {width: 100%;position: absolute;}
-    
+img                                 {display:block;max-width:100%;height:auto;}
 
 /* Global */
 html                                {box-sizing: border-box;}
