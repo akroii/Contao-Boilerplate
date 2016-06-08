@@ -16,7 +16,6 @@
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 .image-wrapper                      {width: 90%;height: 0;padding-bottom: 66.67%;position: relative;} /* Padding bottom hack */
 .image-wrapper img                  {width: 100%;position: absolute;}
-img                                 {display:block;max-width:100%;height:auto;}
 
 /* Global */
 html                                {box-sizing: border-box;}
@@ -24,7 +23,8 @@ html                                {box-sizing: border-box;}
 ::-moz-selection,::selection        {background: #b3d4fc;text-shadow: none;}
 html                                {color: #222;font-size: 1rem;line-height: 1.4;}
 audio,canvas,iframe,img,svg,video   {vertical-align: middle;}
-img                                 {display: block;max-width: 100%;height:auto;}
+img                                 {max-width:100%;height:auto;}
+a img,img                           {display:block;}
 a                                   {}
 hr                                  {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
 body                                {min-width:320px;word-wrap: break-word;}
