@@ -272,17 +272,24 @@ FileETag None
   RewriteRule ^([a-z]{2}(\-[A-Z]{2})?)$ $1/ [R=301,L]
   
   ##
-  # Redirects
+  # Custom Redirects
   ##
+  RewriteCond %{QUERY_STRING} longurlwascutoff$
+  RewriteRule (.*) /? [R=301,L]
+  RewriteCond %{QUERY_STRING} frameRegionalLocation=true$
+  RewriteRule (.*) /? [R=301,L]
+  
   #Redirect 301 /old http://www.yyyy.de/new
   #Redirect 410 /assets/css/file.css
 
 ErrorDocument 404 /index.php
 
 </IfModule>
-  ##
-  # Custom Settings
-  ##
+
+##
+# Custom adittional settings
+##
+
 <IfModule mod_setenvif.c>
    SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|^SemrushBot|SemrushBot) keep_out
    SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot) keep_out
