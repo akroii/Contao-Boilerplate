@@ -25,6 +25,7 @@
 - mailusername
 - backendUserHistory
 - backend_user_online
-- i18nl10n 
+- contao-lang_to_url
+- i18nl10n
 - contao-cookiebar
 - zcearchpro
