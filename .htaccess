@@ -292,7 +292,7 @@ ErrorDocument 404 /index.php
 
 <IfModule mod_setenvif.c>
    SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|^SemrushBot|SemrushBot) keep_out
-   SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot) keep_out
+   SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot|binlar|casper|cmsworldmap|comodo|diavol|dotbot|feedfinder|flicky|ia_archiver|jakarta|kmccrew|nutch|planetwork|purebot|pycurl|skygrid|sucker|turnit|vikspider|zmeu) keep_out
    SetEnvIfNoCase User-Agent (200PleaseBot|ApacheBench|LoadTimeBot) keep_out
    SetEnvIfNoCase User-Agent (CareerBot|GrapeshotCrawler|iCjobs|magpie-crawler|proximic|QuerySeekerSpider|Vagabondo|WBSearchBot) keep_out
    SetEnvIfNoCase User-Agent (Ezooms|^Java|libwww-perl|niki-bot|updown_tester) keep_out
