@@ -10,6 +10,16 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2', 
 // $GLOBALS['TL_DCA']['tl_form_field']['fields']['type']['default'] = 'hidden';
 
 if (!\BackendUser::getInstance()->isAdmin) {
+    $GLOBALS['TL_DCA']['tl_news']['fields']['alias']['eval']['disabled'] = true;
+    $GLOBALS['TL_DCA']['tl_news']['fields']['author']['eval']['readonly'] = true;
+
+    $GLOBALS['TL_DCA']['tl_page']['fields']['alias']['eval']['disabled'] = true;
+
+    $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['alias']['eval']['disabled'] = true;
+    $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['author']['eval']['readonly'] = true;
+
+    $GLOBALS['TL_DCA']['tl_article']['fields']['author']['eval']['doNotCopy'] = false;
+    $GLOBALS['TL_DCA']['tl_article']['fields']['author']['eval']['readonly'] = true;
     foreach ((array) $GLOBALS['TL_HOOKS']['getSystemMessages'] as $k => $arrHook) {
         if ($arrHook[1] == 'versionCheck') {
             unset($GLOBALS['TL_HOOKS']['getSystemMessages'][$k]);
