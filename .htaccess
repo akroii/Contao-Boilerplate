@@ -279,6 +279,7 @@ FileETag None
   RewriteCond %{QUERY_STRING} frameRegionalLocation=true$
   RewriteRule (.*) /? [R=301,L]
   
+  Redirect 301 "./" http://%{HTTP_HOST}.de
   #Redirect 301 /old http://www.yyyy.de/new
   #Redirect 410 /assets/css/file.css
 
