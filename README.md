@@ -5,7 +5,8 @@
 - Get a default file & folder-skeleton
 - Basic configuration
 - Basic stylesheets
-= Run your fresh Contao-installation like a rocket
+
+=> Run your fresh Contao-installation like a rocket
 
 ## Recommended Modules
 - dma_elementgenerator
