@@ -8,7 +8,7 @@
 
 => Run your fresh Contao-installation like a rocket
 
-## Recommended Modules
+## Recommended Modules for Contao
 - dma_elementgenerator
 - contao-ce-access
 - inherit_article
