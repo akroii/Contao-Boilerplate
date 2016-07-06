@@ -1,7 +1,8 @@
 /* Navigation */
 .mainnav                    {}
 .mainnav li                 {}
-.mainnav li a               {}
+.mainnav li a,
+.mainnav li span            {}
 
 .submenu                    {}
 .submenu li                 {}
