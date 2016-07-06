@@ -5,7 +5,7 @@
 .float_none                         {float:none;}
 .float_right                        {float:right;}
 .float_left                         {float:left;}
-.invisible                          {visibility: hidden;}
+.invisible                          {visibility: hidden;display: none;}
 .clearfix:before,
 .clearfix:after                     {content: " ";display: table;}
 .clearfix:after                     {clear: both;}
