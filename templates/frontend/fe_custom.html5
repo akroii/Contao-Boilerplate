@@ -1,0 +1,11 @@
+<?php $this->extend('fe_page'); ?>
+	<?php $this->block('html5shiv'); ?>
+		<?php $this->parent(); ?>
+		<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+	<?php $this->endblock(); ?>
+
+	<?php $this->block('body'); ?>
+		<div class="container">
+			<?php $this->parent(); ?>
+		</div>
+	<?php $this->endblock(); ?>
