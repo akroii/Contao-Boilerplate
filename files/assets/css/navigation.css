@@ -1,4 +1,8 @@
 /* Navigation */
+a                           {text-decoration:none}
+.mainnav.unstyled ul,
+.submenu.unstyled ul        {margin:0;padding:0}
+
 .mainnav                    {}
 .mainnav li                 {}
 .mainnav li a,
