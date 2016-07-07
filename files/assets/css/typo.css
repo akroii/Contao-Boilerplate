@@ -2,7 +2,6 @@
 q                               {display: inline;}
 q:after                         {content: '“';}
 q:before                        {content: '„';}
-html                            {-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;}
 body                            {font-size: 1em;line-height: 1.5;}
 h1,h2,h3,h4,h5,h6,p             {}
 h1                              {}
