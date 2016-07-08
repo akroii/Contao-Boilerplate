@@ -9,3 +9,9 @@
 			<?php $this->parent(); ?>
 		</div>
 	<?php $this->endblock(); ?>
+
+	<?php $this->block('container'); ?>
+		<div class="row">
+			<?php $this->parent(); ?>
+		</div>
+	<?php $this->endblock();?>
