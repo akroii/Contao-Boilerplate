@@ -1,5 +1,6 @@
-<?php
-$GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/script.js|static';
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/script.js|static';?>
+<?php $GLOBALS['TL_CSS'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/css/classic.css|static';?>
+
 <?php $GLOBALS['TL_BODY'][] = '<script>
 	$(document).ready(function() {
 	 // do something
