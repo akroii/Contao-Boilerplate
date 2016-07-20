@@ -278,10 +278,11 @@ FileETag None
   RewriteRule (.*) /? [R=301,L]
   RewriteCond %{QUERY_STRING} frameRegionalLocation=true$
   RewriteRule (.*) /? [R=301,L]
+  #RedirectMatch permanent "/subfolder/äÃ¤.pdf" http://www.host.de
   
   ## Old Joomla Site
   #RewriteCond %{QUERY_STRING} Itemid=134 [NC]
-  #RewriteRule ^.*$ http://%{HTTP_HOST}/madplan/lav-madplan? [R=301,L]
+  #RewriteRule ^.*$ http://%{HTTP_HOST}/subfolder? [R=301,L]
   
   Redirect 301 "./" http://%{HTTP_HOST}.de
   #Redirect 301 /old http://www.yyyy.de/new
