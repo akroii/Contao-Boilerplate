@@ -1,0 +1,8 @@
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/lazysizes.min.js|static';?>
+
+<?php $GLOBALS['TL_BODY'][] = '<script>
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    lazySizesConfig.loadMode = 1;
+
+</script>'
+;?>

@@ -1,0 +1,2 @@
+.fade-box .lazyload,.fade-box .lazyloading {opacity: 0;transition: opacity 400ms;}
+.fade-box img.lazyloaded {opacity: 1;}
