@@ -1,4 +1,7 @@
 <?php $this->extend('fe_page'); ?>
+<?php $GLOBALS['TL_HEAD'][] = '<link rel="dns-prefetch" href="//example.com" />'; ?>
+<?php $GLOBALS['TL_HEAD'][] = '<link rel="preconnect" href="//example.com">'; ?>
+
 	<?php $this->block('html5shiv'); ?>
 		<?php $this->parent(); ?>
 		<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
