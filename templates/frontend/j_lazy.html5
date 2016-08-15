@@ -2,7 +2,10 @@
 
 <?php $GLOBALS['TL_BODY'][] = '<script>
     window.lazySizesConfig = window.lazySizesConfig || {};
-    lazySizesConfig.loadMode = 1;
-
+    window.lazySizesConfig.loadMode = 1;
+    window.lazySizesConfig.expand = 10;
+    window.lazySizesConfig.expFactor = 1.5;
+    window.lazySizesConfig.preloadClass = "lazypreload";
+    window.lazySizesConfig.hFac = 5;
 </script>'
 ;?>
