@@ -6,8 +6,6 @@
 - Basic configuration
 - Basic stylesheets
 
-=> Run your fresh Contao-installation like a rocket
-
 ## Recommended Modules for Contao
 - dma_elementgenerator
 - contao-ce-access
