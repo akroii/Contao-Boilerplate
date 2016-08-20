@@ -1,10 +1,12 @@
 <?php $this->extend('fe_page'); ?>
-<?php $GLOBALS['TL_HEAD'][] = '<link rel="dns-prefetch" href="//example.com" />'; ?>
-<?php $GLOBALS['TL_HEAD'][] = '<link rel="preconnect" href="//example.com">'; ?>
+<?php $GLOBALS['TL_HEAD'][] = '<link rel="dns-prefetch" href="'. $this->replaceInsertTags('{{env::files_url}}').'" />'; ?>
+<?php $GLOBALS['TL_HEAD'][] = '<link rel="preconnect" href="'. $this->replaceInsertTags('{{env::files_url}}').'" />'; ?>
 
 	<?php $this->block('html5shiv'); ?>
 		<?php $this->parent(); ?>
-		<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="assets/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 	<?php $this->endblock(); ?>
 
 	<?php $this->block('body'); ?>
