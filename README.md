@@ -25,6 +25,7 @@
 - backendUserHistory
 - backend_user_online
 - contao-lang_to_url
+- m17-sticky-backend-footer
 - i18nl10n
 - contao-cookiebar
 - zcearchpro
