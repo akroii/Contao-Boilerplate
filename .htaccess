@@ -296,28 +296,60 @@ ErrorDocument 404 /index.php
 # Custom adittional settings
 ##
 
-<IfModule mod_setenvif.c>
-   SetEnvIfNoCase User-Agent (AiHitBot|BLEXBot|Cliqzbot|DotBot|linkdexbot|MJ12bot|^SemrushBot|SemrushBot|xovibot) keep_out
-   SetEnvIfNoCase User-Agent (AhrefsBot|BacklinkCrawler|dlcbot|spbot|binlar|casper|cmsworldmap|comodo|diavol|dotbot|feedfinder|flicky|ia_archiver|jakarta|kmccrew|nutch|planetwork|purebot|pycurl|skygrid|sucker|turnit|vikspider|zmeu) keep_out
-   SetEnvIfNoCase User-Agent (200PleaseBot|ApacheBench|LoadTimeBot) keep_out
-   SetEnvIfNoCase User-Agent (CareerBot|GrapeshotCrawler|iCjobs|magpie-crawler|proximic|QuerySeekerSpider|Vagabondo|WBSearchBot) keep_out
-   SetEnvIfNoCase User-Agent (Ezooms|^Java|libwww-perl|^libwww|urllib|^Wget|niki-bot|updown_tester|PHPCrawl) keep_out
-   SetEnvIfNoCase User-Agent ^$ keep_out
-   <limit GET POST PUT>
-      Order Allow,Deny
-      Allow from all
-      Deny from env=keep_out
-   </limit>
-</IfModule>
+  RewriteCond %{HTTP_USER_AGENT} ^(aesop_com_spiderman|alexibot|backweb|bandit|batchftp|bigfoot) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(black.?hole|blackwidow|blowfish|botalot|buddy|builtbottough|bullseye) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(cheesebot|cherrypicker|chinaclaw|collector|copier|copyrightcheck) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(cosmos|crescent|curl|custo|da|diibot|disco|dittospyder|dragonfly) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(drip|easydl|ebingbong|ecatch|eirgrabber|emailcollector|emailsiphon) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(emailwolf|erocrawler|exabot|eyenetie|filehound|flashget|flunky) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(frontpage|getright|getweb|go.?zilla|go-ahead-got-it|gotit|grabnet) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(grafula|harvest|hloader|hmview|httplib|httrack|humanlinks|ilsebot) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(infonavirobot|infotekies|intelliseek|interget|iria|jennybot|jetcar) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(joc|justview|jyxobot|kenjin|keyword|larbin|leechftp|lexibot|lftp|libweb) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(likse|linkscan|linkwalker|lnspiderguy|lwp|magnet|mag-net|markwatch) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(mata.?hari|memo|microsoft.?url|midown.?tool|miixpc|mirror|missigua) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(mister.?pix|moget|mozilla.?newt|nameprotect|navroad|backdoorbot|nearsite) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(net.?vampire|netants|netcraft|netmechanic|netspider|nextgensearchbot) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(attach|nicerspro|nimblecrawler|npbot|octopus|offline.?explorer) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(offline.?navigator|openfind|outfoxbot|pagegrabber|papa|pavuk) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(pcbrowser|php.?version.?tracker|pockey|propowerbot|prowebwalker) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(psbot|pump|queryn|recorder|realdownload|reaper|reget|true_robot) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(repomonkey|rma|internetseer|sitesnagger|siphon|slysearch|smartdownload) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(snake|snapbot|snoopy|sogou|spacebison|spankbot|spanner|sqworm|superbot) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(superhttp|surfbot|asterias|suzuran|szukacz|takeout|teleport) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(telesoft|the.?intraformant|thenomad|tighttwatbot|titan|urldispatcher) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(turingos|turnitinbot|urly.?warning|vacuum|vci|voideye|whacker) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^(libwww-perl|widow|wisenutbot|wwwoffle|xaldon|xenu|zeus|zyborg|anonymouse) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^web(zip|emaile|enhancer|fetch|go.?is|auto|bandit|clip|copier|master|reaper|sauger|site.?quester|whack) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^.*(craftbot|download|extract|stripper|sucker|ninja|clshttp|webspider|leacher|collector|grabber|webpictures).*$ [NC]
+  RewriteCond %{HTTP_USER_AGENT} ^atraxbot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^Azureus [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^geohasher [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^PycURL [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^Python-urllib [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^research-scan-bot [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^Sosospider [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^Wget [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^xenu [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^.*casper [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^.*goblox [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} ^.*sun4u [NC]
+  RewriteRule ^(.*)$ - [F]
+  RewriteCond %{HTTP_REFERER} ^$ [NC]
+  RewriteCond %{HTTP_USER_AGENT} ^$ [NC]
+  RewriteRule .* - [F,L]
 
 order allow,deny
 deny from 111.123.456.78
 allow from all
 
 RewriteCond %{QUERY_STRING} proc/self/environ [OR]
+RewriteCond %{THE_REQUEST} ^.*(\\r|\\n|%0A|%0D).* [NC,OR]
 RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
 RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
 RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{HTTP_COOKIE} ^.*(<|>|'|'|%0A|%0D|%27|%3C|%3E|%00).* [NC,OR]
+RewriteCond %{REQUEST_URI} ^/(,|;|:|<|>|">|"<|/|\\\.\.\\).{0,9999}.* [NC,OR]
 RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
 RewriteRule ^(.*)$ index.php [F,L]
 
