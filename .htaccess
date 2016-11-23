@@ -339,9 +339,8 @@ ErrorDocument 404 /index.php
   RewriteCond %{HTTP_USER_AGENT} ^$ [NC]
   RewriteRule .* - [F,L]
 
-order allow,deny
-deny from 111.123.456.78
-allow from all
+Order Deny,Allow
+Deny from 74.50.21.0
 
 RewriteCond %{QUERY_STRING} proc/self/environ [OR]
 RewriteCond %{THE_REQUEST} ^.*(\\r|\\n|%0A|%0D).* [NC,OR]
