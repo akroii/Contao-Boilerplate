@@ -34,3 +34,5 @@
 - i18nl10n
 - contao-cookiebar
 - zcearchpro
+- Contao hidefiles
+- htaccess-Wartungsseite
