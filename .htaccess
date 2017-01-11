@@ -361,6 +361,7 @@ SetEnv TZ Europe/Berlin
 DefaultLanguage de-DE
 SetEnv SERVER_ADMIN yyy@yyy.de
 
-<ifModule mod_headers.c>
-Header set Connection keep-alive
-</ifModule>
+# If you have enough RAM
+#<ifModule mod_headers.c>
+#Header set Connection keep-alive
+#</ifModule>
