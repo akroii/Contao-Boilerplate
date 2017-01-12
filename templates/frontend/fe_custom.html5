@@ -1,12 +1,23 @@
 <?php $this->extend('fe_page'); ?>
-<?php $GLOBALS['TL_HEAD'][] = '<link rel="dns-prefetch" href="'. $this->replaceInsertTags('{{env::files_url}}').'" />'; ?>
-<?php $GLOBALS['TL_HEAD'][] = '<link rel="preconnect" href="'. $this->replaceInsertTags('{{env::files_url}}').'" />'; ?>
+<?php $this->block('meta'); ?>
+<meta name="robots" content="<?= $this->robots ?>">
+    <meta name="description" content="<?= $this->description ?>">
+    <?php if($this->keywords):?>
+    <meta name="keywords" content="<?= $this->keywords ?>">
+    <?php endif;?>
+<meta name="generator" content="Contao Open Source CMS">
+    <?php $this->endblock(); ?>
+
+    <?php if($this->replaceInsertTags('{{env::files_url}}')):?>
+        <?php $GLOBALS['TL_HEAD'][] = '<link rel="dns-prefetch" href="'. $this->replaceInsertTags('{{env::files_url}}').'" />'; ?>
+        <?php $GLOBALS['TL_HEAD'][] = '<link rel="preconnect" href="'. $this->replaceInsertTags('{{env::files_url}}').'" />'; ?>
+    <?php endif;?>
 
 	<?php $this->block('html5shiv'); ?>
-		<?php $this->parent(); ?>
 		<!--[if lt IE 9]>
 		<script src="assets/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	<?php $this->endblock(); ?>
 
 	<?php $this->block('body'); ?>
