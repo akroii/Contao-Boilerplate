@@ -13,3 +13,4 @@ input[type="submit"],
 select,
 input[type="email"], textarea           {-webkit-appearance: none;-webkit-border-radius: 0;border-radius: 0;border:0;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 input:-webkit-autofill                  {-webkit-box-shadow: 0 0 0px 1000px white inset;}
+.ce_gallery.nospacing                   {vertical-align:bottom;font-size:0}
