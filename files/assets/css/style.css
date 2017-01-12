@@ -12,8 +12,8 @@
 .clearfix:after                     {clear: both;}
 .unstyled ul,.unstyled              {list-style:none;}
 .inline li                          {display: inline}
-.inline li a                        {display: inline-block}
-.noSpacing ul,.noSpacing ol,.noGap  {padding:0;margin:0}
+.inline li a,.inline figure         {display: inline-block}
+.nospacing ul,.nospacing ol,.nogap  {padding:0;margin:0}
 .overlay > .image_container         {position:absolute;z-index: -1;}
 .midpoint                           {-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 .image-wrapper                      {width: 90%;height: 0;padding-bottom: 66.67%;position: relative;} /* Padding bottom hack */
