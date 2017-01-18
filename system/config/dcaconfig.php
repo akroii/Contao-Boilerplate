@@ -7,6 +7,7 @@ $GLOBALS['TL_DCA']['tl_article']['list']['label']['format'] = '%s <span style="c
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['type']['default'] = 'headline';
 $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'] = array('h2', 'h3', 'h4', 'h5', 'h6', 'span');
+$GLOBALS['TL_DCA']['tl_module']['fields']['headline']['options'] = array('h2', 'h3', 'h4', 'h5', 'h6', 'span');
 // $GLOBALS['TL_DCA']['tl_form_field']['fields']['type']['default'] = 'hidden';
 $GLOBALS['TL_DCA']['tl_page']['fields']['robots']['options'] = array('index,follow', 'index,nofollow', 'noindex,follow', 'noindex,nofollow', 'index,follow,noodp', 'index,nofollow,noodp', 'noindex,follow,noodp', 'noindex,nofollow,noodp', 'noodp');
 if (!\BackendUser::getInstance()->isAdmin) {
