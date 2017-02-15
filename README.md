@@ -15,7 +15,7 @@
 - dma_elementgenerator
 - contao-ce-access
 - inherit_article
-- easyTheme
+- contao-easy_themes
 - easyFavicon
 - easyupdate3
 - m17-sticky-backend-footer
