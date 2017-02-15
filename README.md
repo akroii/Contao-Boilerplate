@@ -23,6 +23,8 @@
 - contao-protectedselect
 - contao-conditionalformfields
 - contao-conditionalselectmenu
+- newsMetaTitle
+- newsDescription
 - inputvar
 - contao-formrecipient
 - rel-canonical
