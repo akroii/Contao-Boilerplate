@@ -1,0 +1,3 @@
+<?php
+$xml = new SimpleXMLElement(file_get_contents($this->img['src']));
+echo $xml->asXML();
