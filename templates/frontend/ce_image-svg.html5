@@ -7,10 +7,9 @@
 
     <!-- Thanks to ro-a-fl //-->
     <?php
-        $xml = new SimpleXMLElement(file_get_contents($this->singleSRC));
-        $xml->addAttribute("width",$this->picture["img"]["width"]);
-        $xml->addAttribute("height",$this->picture["img"]["height"]);
-        echo $xml->asXML();
+        $xml = new SimpleXMLElement(file_get_contents($this->img['src']));
+        $dom = dom_import_simplexml($xml);
+        echo $dom->ownerDocument->saveXML($dom->ownerDocument->documentElement);
     ?>
 
     <?php if ($this->href): ?>
