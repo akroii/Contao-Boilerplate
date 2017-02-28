@@ -1,3 +1,4 @@
 <?php
 $xml = new SimpleXMLElement(file_get_contents($this->img['src']));
-echo $xml->asXML();
+$dom = dom_import_simplexml($xml);
+echo $dom->ownerDocument->saveXML($dom->ownerDocument->documentElement);
