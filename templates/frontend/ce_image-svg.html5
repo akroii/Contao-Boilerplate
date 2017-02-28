@@ -4,8 +4,6 @@
     <?php if ($this->href): ?>
       <a href="<?= $this->href ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
     <?php endif; ?>
-
-    <!-- Thanks to ro-a-fl //-->
     <?php
         $xml = new SimpleXMLElement(file_get_contents($this->img['src']));
         $dom = dom_import_simplexml($xml);
