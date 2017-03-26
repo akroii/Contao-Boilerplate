@@ -208,6 +208,12 @@ FileETag None
   RewriteBase /
 
   ##
+  # Turn on https, if needed
+  #RewriteCond %{HTTPS} =off
+  #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  ##
+  
+  ##
   # Uncomment the following lines to add "www." to the domain:
   #
   #   RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
