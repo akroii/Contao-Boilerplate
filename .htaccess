@@ -206,12 +206,6 @@ FileETag None
   # Depending on your server, you might have to remove the line entirely.
   ##
   RewriteBase /
-
-  ##
-  # Turn on https, if needed
-  #RewriteCond %{HTTPS} =off
-  #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-  ##
   
   ##
   # Uncomment the following lines to add "www." to the domain:
@@ -295,6 +289,13 @@ FileETag None
   #Redirect 410 /assets/css/file.css
 
 ErrorDocument 404 /index.php
+
+  ##
+  # Turn on https, if needed
+  # RewriteCond %{HTTPS} !=on
+  # RewriteCond %{ENV:HTTPS} !=on
+  # RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+  ##
 
 </IfModule>
 
