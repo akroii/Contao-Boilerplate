@@ -11,6 +11,7 @@
 2. Unzip
 3. Copy folder-structure to your Contao root -> insert & merge with existing folders
 4. Set `$GLOBALS['TL_ASSETS']['JQUERY'] = '2.1.4';` in localconfig.php
+5. Set `width=device-width, initial-scale=1` set Layout/Theme-Settings
 
 ## Recommended Modules for Contao
 - dma_elementgenerator
