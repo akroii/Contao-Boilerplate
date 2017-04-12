@@ -1,4 +1,7 @@
 <?php
+$GLOBALS['TL_DCA']['tl_content']['fields']['headline']['eval']['allowHtml'] = true;
+$GLOBALS['TL_DCA']['tl_news']['fields']['headline']['eval']['allowHtml'] = true;
+
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['fields'][] = 'id';
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['format'] = '%s <span style="color: #aaaaaa; padding-left: 3px;">(ID: %s)</span>';
 
