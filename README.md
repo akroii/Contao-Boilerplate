@@ -1,5 +1,5 @@
 # Contao-Boilerplate
-- You can take care of contao alone (don't be busy with creating folders :))
+- You can take care of contao alone (don't be busy while creating folders :))
 
 ## What you see is what you get :)
 - Get a default file & folder-skeleton
