@@ -261,7 +261,9 @@ FileETag None
   ##
   RewriteCond %{REQUEST_FILENAME} !\.(htm|php|js|css|map|htc|png|gif|jpe?g|ico|xml|csv|txt|swf|flv|mp4|webm|ogv|mp3|ogg|oga|eot|otf|tt[cf]|woff2?|svgz?|pdf|gz)$
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule .*\.html$ index.php [L]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  #RewriteRule .*\.html$ index.php [L]
+  RewriteRule .* index.php [L]
 
   ##
   # The following rules are required if you want to pass the language as first
@@ -269,7 +271,7 @@ FileETag None
   # to the front end controller, the second one adds a missing trailing slash.
   ##
   RewriteRule ^[a-z]{2}(\-[A-Z]{2})?/$ index.php [L]
-  RewriteRule ^([a-z]{2}(\-[A-Z]{2})?)$ $1/ [R=301,L]
+  #RewriteRule ^([a-z]{2}(\-[A-Z]{2})?)$ $1/ [R=301,L]
   
   ##
   # Custom Redirects
@@ -278,6 +280,8 @@ FileETag None
   RewriteRule (.*) /? [R=301,L]
   RewriteCond %{QUERY_STRING} frameRegionalLocation=true$
   RewriteRule (.*) /? [R=301,L]
+  RewriteCond %{QUERY_STRING} ^shop=true$
+  RewriteRule ^old\.html$ https://www.host.de/new? [R=301,L]
   #RedirectMatch permanent "/subfolder/äÃ¤.pdf" http://www.host.de
   
   ## Old Joomla Site
