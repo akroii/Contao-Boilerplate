@@ -1,10 +1,12 @@
 # Contao-Boilerplate
-- You can take care of contao alone (don't be busy while creating folders :))
+- You can take care of contao alone
+- Contao-Boilerplate delivers files/folders you create anyway
 
 ## What you see is what you get :)
 - Get a default file & folder-skeleton
 - Basic configuration
 - Basic stylesheets
+- little Helpers in your workflow
 
 ## Installation
 1. Donwload Contao-Boilerplate-Master.zip
