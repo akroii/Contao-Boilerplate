@@ -15,7 +15,12 @@
 4. Set `$GLOBALS['TL_ASSETS']['JQUERY'] = '2.2.4';` in localconfig.php
 5. Set `width=device-width, initial-scale=1` set Layout/Theme-Settings
 
-## Recommended Modules for Contao
+## Recommended snippets
+```
+<body id="top" class="{{ua::class}} {{page::pageTitle|standardize|strtolower}} {{page::parentAlias|standardize|strtolower}} <?php echo ($this->replaceInsertTags('{{page::alias}}') != "index" ? "sub" : "main");?><?php if ($this->class) echo ' ' . $this->class; ?>"<?php if ($this->onload): ?> onload="<?= $this->onload ?>"<?php endif; ?>>
+```
+
+## Recommended modules for Contao
 - dma_elementgenerator
 - contao-ce-access
 - inherit_article
