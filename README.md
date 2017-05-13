@@ -11,7 +11,7 @@
 ## Installation
 1. Donwload Contao-Boilerplate-Master.zip
 2. Unzip
-3. Copy folder-structure to your Contao root -> insert & merge with existing folders
+3. Copy folder-structure to your Contao root -> insert & replace with existing folders
 4. Set `$GLOBALS['TL_ASSETS']['JQUERY'] = '2.2.4';` in localconfig.php
 5. Set `width=device-width, initial-scale=1` set Layout/Theme-Settings
 
