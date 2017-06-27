@@ -1,0 +1,17 @@
+<?php if ($this->fsType == 'fsStart'): ?>
+<div class="row widget widget-fieldset">
+	<div class="col-xs-12">
+  <fieldset<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?>>
+  <?php if ($this->label): ?>
+    <legend class="fs-header"><?= $this->label ?></legend>
+			<div class="fs-content invisible">
+  <?php endif; ?>
+
+<?php else: ?>
+
+	  </div>
+    </fieldset>
+	</div>
+	</div>
+
+<?php endif; ?>

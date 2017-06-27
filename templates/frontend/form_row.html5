@@ -1,0 +1,36 @@
+
+<?php if ($this->tableless): ?>
+
+  <div class="row <?= $this->prefix ?><?php if ($this->class) echo ' ' . $this->class; ?>">
+	  <?php print_r($this->slabel);?>
+		<?php if($this->label):?>
+	    <div class="col-xs-12 col-sm-4 col-md-4 label">
+		    <?php $this->block('label'); ?>
+	      <?php $this->endblock(); ?>
+	    </div>
+		<?php elseif ($this->arrOptions):?>
+
+		<?php endif;?>
+	  <div class="col-xs-12 col-sm-8 col-md-8">
+      <?php $this->block('field'); ?>
+      <?php $this->endblock(); ?>
+	  </div>
+
+  </div>
+
+<?php else: ?>
+
+  <tr class="<?= $this->rowClass ?>">
+    <td class="col_0 col_first">
+      <?php $this->block('label'); ?>
+        &nbsp;
+      <?php $this->endblock(); ?>
+    </td>
+    <td class="col_1 col_last">
+      <?php $this->block('field'); ?>
+        &nbsp;
+      <?php $this->endblock(); ?>
+    </td>
+  </tr>
+
+<?php endif; ?>
