@@ -1,4 +1,4 @@
-# Contao-Boilerplate
+# Contao-Boilerplate for Contao 3.5.x
 - You can take care of contao alone
 - Contao-Boilerplate delivers files/folders you create anyway
 
