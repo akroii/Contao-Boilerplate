@@ -1,0 +1,10 @@
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/AH-Schmidt/assets/js/fontObserver.js|static';?>
+
+<?php $GLOBALS['TL_BODY'][] = '<script>
+    var muliRegular = new FontFaceObserver(\'muli-regular\');
+
+    muliRegular.load().then(function () {
+      document.documentElement.className += " fonts-loaded";
+    });
+</script>
+';?>
