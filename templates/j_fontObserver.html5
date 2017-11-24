@@ -1,0 +1,13 @@
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/xxx/assets/js/fontObserver.js|static';?>
+
+<?php $GLOBALS['TL_BODY'][] = '<script>
+    var muliRegular = new FontFaceObserver(\'muli-regular\');
+    var muliRegularBlack = new FontFaceObserver(\'muli-black\');
+
+    Promise.all([
+      muliRegular.load(null, 3000),
+      muliRegularBlack.load(null, 3000)]).then(function () {
+      document.documentElement.classList.add(\'fonts-loaded\');
+    });
+</script>
+';?>
